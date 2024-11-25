@@ -1,18 +1,15 @@
 package oopWithNLayerApp.business;
 
 import oopWithNLayerApp.core.logging.Logger;
-import oopWithNLayerApp.dataAccess.JdbcProductDao;
 import oopWithNLayerApp.dataAccess.ProductDao;
 import oopWithNLayerApp.entities.Product;
-
-import java.util.List;
 
 public class ProductManager {
 
     private ProductDao productDao;
-    private List<Logger> loggers;
+    private Logger[] loggers;
 
-    public ProductManager(ProductDao productDao, List<Logger> loggers) {
+    public ProductManager(ProductDao productDao,Logger[] loggers) {
         this.productDao = productDao;
         this.loggers = loggers;
     }
