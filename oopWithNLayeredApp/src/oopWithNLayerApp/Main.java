@@ -11,6 +11,7 @@ public class Main {
 
         ProductManager productManager = new ProductManager(new JdbcProductDao());
         productManager.add(product1);
+        // Furkan ibiş
 
 
 
